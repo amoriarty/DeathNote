@@ -12,7 +12,7 @@ class DeathCell: UITableViewCell {
 	let formatter: DateFormatter = {
 		let formatter = DateFormatter()
 		formatter.locale = Locale(identifier: "fr_FR")
-		formatter.setLocalizedDateFormatFromTemplate("dd/MM/YYYY")
+		formatter.setLocalizedDateFormatFromTemplate("dd MMM YYYY")
 		return formatter
 	}()
 	

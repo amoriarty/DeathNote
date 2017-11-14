@@ -12,7 +12,7 @@ class DatePicker: UIView {
 	let label: UILabel = {
 		let label = UILabel()
 		label.translatesAutoresizingMaskIntoConstraints = false
-		label.text = "Date:"
+		label.text = "Date"
 		label.textColor = .white
 		label.font = .systemFont(ofSize: 22)
 		return label

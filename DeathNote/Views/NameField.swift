@@ -12,7 +12,7 @@ class NameField: UIView {
 	let label: UILabel = {
 		let label = UILabel()
 		label.translatesAutoresizingMaskIntoConstraints = false
-		label.text = "Name:"
+		label.text = "Name"
 		label.textColor = .white
 		label.font = .systemFont(ofSize: 22)
 		return label

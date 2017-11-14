@@ -8,19 +8,15 @@
 
 import UIKit
 
-class ListController: UITableViewController {
+class ListController: UITableViewController, EditDelegate {
 	private let editController = EditController()
 	private let cellId = "cellId"
-	let deaths: [Death] = [
-		Death(name: "Kenny", date: Date(timeIntervalSinceNow: 0), deathscription: "Tuer par des aliens.", image: UIImage(named: "KennyZombie")),
-		Death(name: "Kenny", date: Date(timeIntervalSinceNow: 0), deathscription: "Explosé.", image: UIImage(named: "KennyZombie")),
-		Death(name: "Kenny", date: Date(timeIntervalSinceNow: 0), deathscription: "́Ecrasé par la voiture de l'officier Barbrady.", image: UIImage(named: "KennyZombie")),
-		Death(name: "Kenny", date: Date(timeIntervalSinceNow: 0), deathscription: "Tuer par des aliens.\nExplosé.\nEcrasé par la voiture de l'officier Barbrady.\nDécapité par Kyle.", image: UIImage(named: "KennyZombie"))
-	]
+	var deaths: [ Death ] = DEATHS.sorted { $0.date < $1.date }
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		title = "Death Note"
+		editController.delegate = self
 		setupTableView()
 		setupNavigationBar()
 	}
@@ -42,6 +38,24 @@ class ListController: UITableViewController {
 	@objc func toggleAdd() {
 		editController.death = nil
 		navigationController?.pushViewController(editController, animated: true)
+	}
+	
+	func didSave(_ death: Death) {
+		deaths.append(death)
+		deaths = deaths.sorted(by: { $0.date < $1.date })
+		tableView.reloadData()
+	}
+	
+	func didReplace(_ death: Death, by edit: Death) {
+		guard let index = deaths.index(where: { $0 == death }) else { return }
+		_ = deaths.remove(at: index)
+		deaths.append(edit)
+		deaths = deaths.sorted(by: { $0.date < $1.date })
+		tableView.reloadData()
+	}
+	
+	func shouldPopView() {
+		navigationController?.popViewController(animated: true)
 	}
 	
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

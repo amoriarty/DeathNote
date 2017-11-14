@@ -18,6 +18,8 @@
 		EC7C54381FB9FEA4003C3BA7 /* Death.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C54371FB9FEA4003C3BA7 /* Death.swift */; };
 		EC7C543B1FBA0137003C3BA7 /* DeathCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C543A1FBA0137003C3BA7 /* DeathCell.swift */; };
 		ECB3EDAB1FBAE7E800AFCAD4 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3EDAA1FBAE7E800AFCAD4 /* DatePicker.swift */; };
+		ECB3EDAD1FBAF19700AFCAD4 /* DeathscriptionField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3EDAC1FBAF19700AFCAD4 /* DeathscriptionField.swift */; };
+		ECB3EDAF1FBB027400AFCAD4 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3EDAE1FBB027400AFCAD4 /* Placeholder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		EC7C54371FB9FEA4003C3BA7 /* Death.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Death.swift; sourceTree = "<group>"; };
 		EC7C543A1FBA0137003C3BA7 /* DeathCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathCell.swift; sourceTree = "<group>"; };
 		ECB3EDAA1FBAE7E800AFCAD4 /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
+		ECB3EDAC1FBAF19700AFCAD4 /* DeathscriptionField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathscriptionField.swift; sourceTree = "<group>"; };
+		ECB3EDAE1FBB027400AFCAD4 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				EC7C541E1FB9EF07003C3BA7 /* AppDelegate.swift */,
+				ECB3EDAE1FBB027400AFCAD4 /* Placeholder.swift */,
 				EC7C54301FB9FB7B003C3BA7 /* Controllers */,
 				EC7C54361FB9FE74003C3BA7 /* Models */,
 				EC7C54391FBA0115003C3BA7 /* Views */,
@@ -110,6 +115,7 @@
 				EC7C543A1FBA0137003C3BA7 /* DeathCell.swift */,
 				EC4811981FBADAD100449C1E /* NameField.swift */,
 				ECB3EDAA1FBAE7E800AFCAD4 /* DatePicker.swift */,
+				ECB3EDAC1FBAF19700AFCAD4 /* DeathscriptionField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -186,12 +192,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC4811951FBAC3DE00449C1E /* EditController.swift in Sources */,
+				ECB3EDAD1FBAF19700AFCAD4 /* DeathscriptionField.swift in Sources */,
 				EC7C54381FB9FEA4003C3BA7 /* Death.swift in Sources */,
 				EC7C54211FB9EF07003C3BA7 /* MainController.swift in Sources */,
 				EC7C541F1FB9EF07003C3BA7 /* AppDelegate.swift in Sources */,
 				EC7C54321FB9FBE9003C3BA7 /* ListController.swift in Sources */,
 				EC7C543B1FBA0137003C3BA7 /* DeathCell.swift in Sources */,
 				EC7C54351FB9FC84003C3BA7 /* UIView+Constraints.swift in Sources */,
+				ECB3EDAF1FBB027400AFCAD4 /* Placeholder.swift in Sources */,
 				EC4811991FBADAD100449C1E /* NameField.swift in Sources */,
 				ECB3EDAB1FBAE7E800AFCAD4 /* DatePicker.swift in Sources */,
 			);
