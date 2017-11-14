@@ -9,6 +9,7 @@
 import UIKit
 
 class ListController: UITableViewController {
+	private let editController = EditController()
 	private let cellId = "cellId"
 	let deaths: [Death] = [
 		Death(name: "Kenny", date: Date(timeIntervalSinceNow: 0), deathscription: "Tuer par des aliens.", image: UIImage(named: "KennyZombie")),
@@ -35,6 +36,12 @@ class ListController: UITableViewController {
 		navigationController?.navigationBar.barStyle = .black
 		navigationController?.navigationBar.barTintColor = .black
 		navigationController?.navigationBar.isTranslucent = false
+		navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(toggleAdd))
+	}
+	
+	@objc func toggleAdd() {
+		editController.death = nil
+		navigationController?.pushViewController(editController, animated: true)
 	}
 	
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -53,5 +60,10 @@ class ListController: UITableViewController {
 		let estimatedFrame = NSString(string: death.deathscription).boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: [.font: UIFont.systemFont(ofSize: 16)], context: nil)
 
 		return estimatedFrame.height + 67
+	}
+	
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		editController.death = deaths[indexPath.item]
+		navigationController?.pushViewController(editController, animated: true)
 	}
 }

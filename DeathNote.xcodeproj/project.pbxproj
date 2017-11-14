@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC4811951FBAC3DE00449C1E /* EditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4811941FBAC3DE00449C1E /* EditController.swift */; };
+		EC4811991FBADAD100449C1E /* NameField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4811981FBADAD100449C1E /* NameField.swift */; };
 		EC7C541F1FB9EF07003C3BA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C541E1FB9EF07003C3BA7 /* AppDelegate.swift */; };
 		EC7C54211FB9EF07003C3BA7 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C54201FB9EF07003C3BA7 /* MainController.swift */; };
 		EC7C54261FB9EF08003C3BA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC7C54251FB9EF08003C3BA7 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC4811941FBAC3DE00449C1E /* EditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditController.swift; sourceTree = "<group>"; };
+		EC4811981FBADAD100449C1E /* NameField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameField.swift; sourceTree = "<group>"; };
 		EC7C541B1FB9EF07003C3BA7 /* DeathNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeathNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC7C541E1FB9EF07003C3BA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC7C54201FB9EF07003C3BA7 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 			children = (
 				EC7C54201FB9EF07003C3BA7 /* MainController.swift */,
 				EC7C54311FB9FBE9003C3BA7 /* ListController.swift */,
+				EC4811941FBAC3DE00449C1E /* EditController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -101,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				EC7C543A1FBA0137003C3BA7 /* DeathCell.swift */,
+				EC4811981FBADAD100449C1E /* NameField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,12 +182,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4811951FBAC3DE00449C1E /* EditController.swift in Sources */,
 				EC7C54381FB9FEA4003C3BA7 /* Death.swift in Sources */,
 				EC7C54211FB9EF07003C3BA7 /* MainController.swift in Sources */,
 				EC7C541F1FB9EF07003C3BA7 /* AppDelegate.swift in Sources */,
 				EC7C54321FB9FBE9003C3BA7 /* ListController.swift in Sources */,
 				EC7C543B1FBA0137003C3BA7 /* DeathCell.swift in Sources */,
 				EC7C54351FB9FC84003C3BA7 /* UIView+Constraints.swift in Sources */,
+				EC4811991FBADAD100449C1E /* NameField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
