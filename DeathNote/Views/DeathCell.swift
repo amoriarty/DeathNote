@@ -60,6 +60,7 @@ class DeathCell: UITableViewCell {
 		text.isSelectable = false
 		text.isScrollEnabled = false
 		text.isEditable = false
+        text.isUserInteractionEnabled = false
 		text.font = .systemFont(ofSize: 16)
 		text.textColor = .white
 		text.backgroundColor = .clear

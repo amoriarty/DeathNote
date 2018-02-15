@@ -45,6 +45,7 @@ class EditController: UIViewController, UITextFieldDelegate {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        view.backgroundColor = .black
 		view.addSubview(name)
 		view.addSubview(datePicker)
 		view.addSubview(deathscription)
